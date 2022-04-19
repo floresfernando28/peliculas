@@ -1,0 +1,240 @@
+/* Añadimos todos los estilos en modo oscuro al body */
+
+body.modo__Dark{
+    background-color: var(--negro__fondo);
+}
+body.modo__Dark .contenedor__logo p,body.modo__Dark .contenedor__logo span{
+    color: var(--amarillo__fuerte)
+}
+body.modo__Dark header{
+    background-color: var(--negro__fondo);
+}
+
+body.modo__Dark .contenedor__nav .boton__busqueda {
+    color: var(--amarillo__fuerte)
+}
+body.modo__Dark .caja__especial__responsive  {
+    background-color: var( --negro__fondo);
+}
+body.modo__Dark::-webkit-scrollbar-thumb {
+    background-color: var(--amarillo__fuerte);
+}
+body.modo__Dark::-webkit-scrollbar {
+    background-color: var(--negro__fondo);
+}
+
+body.modo__Dark .contenedor__slider .info h3:first-child{
+    color: var(--amarillo__fuerte);
+    /* font-weight: 600; */
+}
+body.modo__Dark .contenedor__slider .info span:first-child {
+    color: var(--amarillo__fuerte);
+}
+body.modo__Dark .contenedor__slider .btns .btn.active{
+    background-color: var(--amarillo__fuerte);
+}
+/* body.modo__Dark .contenedor__slider .contenedor__botones i {
+    color: var(--amarillo__fuerte);
+} */
+
+body.modo__Dark .contenedor__busquedas__peliculas .caja1 i {
+    color: var(--amarillo__fuerte);
+}
+/* Parte de los slider --> slider  */
+
+
+
+body.modo__Dark a .caja__estrellas i {
+    color: var(--amarillo__fuerte);
+ }
+
+
+ body.modo__Dark a #caja__estrella__menu{
+     color: var(--blanco);
+     background-color: var(--amarillo__fuerte);
+     animation: animate__netflix 2s linear infinite;
+}
+/* body.modo__Dark a #caja__estrella__menu:hover{
+    color: var(--amarillo__fuerte);
+    background-color:transparent;
+    transition: background-color .6s;
+} */
+body.modo__Dark .contenedor__slider {
+    background-color: var(--negro__fondo);
+}
+
+
+body.modo__Dark .slider__caja.active .contenedor__estrellas__principal {
+    color: var(--amarillo__fuerte);
+    animation: fernando 3s alternate;
+}
+
+/* Le añadimos nuevos colores a las flechas del slider */
+
+body.modo__Dark .swiper-button-next::after,
+body.modo__Dark  .swiper-button-prev::after{
+    color: var(--amarillo__fuerte);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+ /* Peliculas recomdadas */
+
+
+body.modo__Dark .caja__caja__info span {
+    color: var(--amarillo__fuerte);
+}
+body.modo__Dark .contenedor__principal .swiper {
+    background-color: var(--negro__fondo);
+
+} 
+/* Animaciones AL boton de la esquina inferior derecha */
+
+body.modo__Dark .caja__flotante {
+    background-color: var(--amarillo__fuerte);
+    animation: animate__netflix 2s linear infinite;
+
+}
+
+
+
+
+
+
+body.modo__Dark .contenedor__principal .swiper-slide{
+    background-color: var(--negro__fondo);
+}
+
+/* Estilos al menu de peliculas de la seccion 3 --> a los iconos */
+
+
+body.modo__Dark  .inono_caja.active span{
+    color: var(--amarillo__fuerte);
+}
+
+body.modo__Dark .inono_caja.active i{
+    color: var(--amarillo__fuerte);
+
+}
+
+
+/* Estilos alas secciones */
+
+body.modo__Dark .caja__informacion__seccion .play__movies{
+    background-color: var(--amarillo__fuerte);
+    color: var(--blanco);
+    animation: animate__netflix 2s linear infinite;
+}
+body.modo__Dark .caja__informacion__seccion div:first-child span{
+    color: var(--blanco);
+}
+body.modo__Dark .caja__informacion__seccion div:first-child{
+    color: var(--amarillo__fuerte);
+}
+
+/* Estilos al buscador */
+
+
+
+body.modo__Dark .boton__de__ver__mas button{
+    color: var(--amarillo__fuerte);
+
+}
+
+body.modo__Dark .caja__input button{
+
+    color: var(--amarillo__fuerte);
+}
+
+
+body.modo__Dark .boton__de__ver__mas i:hover{
+    color: var(--amarillo__fuerte);
+}
+
+
+
+/* Estilos ala caja tendencias de la seccion de peliculas */
+
+
+body.modo__Dark .caja__tendencias{
+    border-bottom: 2px solid var(--negro__fondo);
+}
+
+body.modo__Dark .caja__caja__tendencias h3:first-child{
+    color: var(--amarillo__fuerte);
+}
+body.modo__Dark .caja__caja__tendencias i{
+    color: var(--amarillo__fuerte);
+
+}
+
+body.modo__Dark  .caja__tendencias__info .caja__ver__trailer i {
+    background-color: var(--amarillo__fuerte);
+    color: var(--blanco);
+    animation: animate__netflix 2.2s linear infinite;
+}
+body.modo__Dark  .caja__padre .span__h3{
+    color: var(--amarillo__fuerte);
+}
+
+body.modo__Dark .caja__contendora__caja__tercearia .caja__tercearia__imagenes .caja__info__tercearia h5{
+    color: var(--amarillo__fuerte);
+}
+
+body.modo__Dark .caja__botones__imagenes button.active{
+    background-color: var(--amarillo__fuerte);
+    animation: animate__netflix 3s linear infinite;
+}
+
+body.modo__Dark .botones__caja h3{
+    color: var(--amarillo__fuerte);
+}
+body.modo__Dark .span-2{
+    color: var(--amarillo__fuerte);
+}
+
+
+/* Estilos ala seccion #4 */
+body.modo__Dark .caja__informacion__video span{
+    color: var(--amarillo__fuerte);
+}
+body.modo__Dark .caja__informacion__video i{
+    color: var(--amarillo__fuerte);
+}
+body.modo__Dark .caja__informacion__video__2 button{
+    background-color: var(--amarillo__fuerte) ;
+    animation: animate__netflix 2s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+/* Animacion para el boton de las peliculas en estado de netflix */
+
+@keyframes animate__netflix {
+    0%{
+        box-shadow: 0 0 0 0 rgb(255, 180, 58, 0.7);;
+    }
+    40%{
+        box-shadow: 0 0 0 30px  rgb(255, 193, 7, 0);
+    }
+    80%{
+        box-shadow: 0 0 0 20px rgb(255, 193, 7, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(255, 193, 7, 0);
+    }
+}
+
+
+
+
+
+
+

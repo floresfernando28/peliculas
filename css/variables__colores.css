@@ -1,0 +1,54 @@
+
+/* Variables personalizadas de Colores */
+:root {
+    --blanco:               #fff;
+    --negro:                #000;
+    --crema:                #ccc;
+    --negro__fondo:         #141414;
+    --amarillo__fuerte:     #ffb43a;
+    --color__fondo__negro:  #1e1e2a;
+    --color__contenedor:    #2d2d2e37; 
+    --color__texto:         #fcfeff;
+    --rojo__netflix:        #e50914;
+    --negro__secundario:    #d1d1d1d1;
+   --color__letra :         #aaa;
+    --azul__fuerte:         hsl(211,100%,50%);
+    --azul__hover:          hsl(214,84%,56%);
+    --amarillo__hover:      hsl(37,94%,57%);
+    --rojo__oscruro:        hsla(0,79%,63%,0.5);
+    --negro__clasico:       hsl(219,32%,10%);
+    --rosado__bajo:         hsl(0,79%,63%);
+    --azul__bajo:           hsla(218,39%,14%,0.8);
+    --amarillo__bajo:       hsl(45,100%,54%);
+    --blanco__hsl:          hsl(0,0%,88%);
+    --fondo__azul__body:    hsl(222,25%,10%);
+    --oscuro__transparente: rgba(0,0,0,0.4);
+    --oscuro__transparente__2: rgba(0,0,0,0.5);
+    --vidrio:               rgba(255,255,255,0.25);
+    --vidrio__blanco:       rgba(255,255,255,1);
+
+    /* Degradados para fondos --> Agregar letras */
+
+    /* Background */
+
+    --Degradado__fondo:   linear-gradient(8deg, hsl(240 17% 14% / 74%) 14%,
+                                         hsl(240 17% 14% / 14%) 44%); 
+
+    /* Animaciones */
+    /* animation: animate 2s linear infinite; */
+    /* @keyframes animate {
+        0%{
+            box-shadow: 0 0 0 0 rgb(255, 180, 58, 0.7);
+        }
+        40%{
+            box-shadow: 0 0 0 30px  rgb(255, 193, 7, 0);
+        }
+        80%{
+            box-shadow: 0 0 0 20px rgb(255, 193, 7, 0);
+        }
+        100%{
+            box-shadow: 0 0 0 0 rgb(255, 193, 7, 0);
+        }
+    } */
+                            
+}

@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkWorld-YGO</title>
+    
+    <!-- CDN Font-Awesome========================================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ¡Importaciones de las fuentes a utilizar de Google-Font!======================-->
+    <!-- Utilizare 'Open Sans' ========-->
+    <!-- Utilizare 'Poppins' ================ -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto:wght@100&family=Rubik:wght@500&family=Slabo+13px&family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet"> -->
+
+    <!-- Incluimos las hojas de estilos en cascada.css=============================-->
+    <!-- Contenedor de colores en Variables==============================================-->
+    <link rel="stylesheet" href="css/variables__colores.css">
+
+    <!-- Importamos la libreria swiper.js================================== -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+    <!-- Hoja de todos los estilos=====================================================-->
+    <link rel="stylesheet" href="css/estilos__netflix.css">
+    <link rel="stylesheet" href="css/estilos__contenedor__2.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- header=========================================== -->
+
+    <header>
+        <div class="contenedor__principal">
+            <div class="contenedor__navegacion">
+                <div class="contenedor__logo">
+                    <p><i class="fa-solid fa-tv"></i> Cine<span>NET</span></p>
+                </div>
+
+                <nav class="contenedor__nav">
+                    <div class="caja__especial__responsive">
+                        <button class="boton__menu btn__menu__responsive" id="boton__caja__especial">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <a href="#" class="inicio">Inicio</a>
+                        <a href="#recomendadas">Recomendadas</a>
+                        <a href="#seccion__3">Películas</a>
+                        <a href="#">Más Recientes</a>
+                        <a href="#">Listas</a>
+                        <!-- modo__oscuro -->
+                        <button class="modo__oscuro" id="modo__oscuro">
+                            <span><i class="fa-solid fa-sun dia"></i></span>
+                            <span><i class="fa-solid fa-moon noches"></i></span>
+                        </button>
+                    </div>
+                    
+                    <button class="boton__busqueda" id="boton__busqueda">
+                        <i class="fa-solid fa-magnifying-glass" id="otroIcono"></i>
+                    </button>
+                    <button class="boton__menu btn__menu__menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </nav>
+            </div>
+            <div class="contenedor__busquedas__peliculas" id="contenedor__busquedas__peliculas">
+                <div class="caja__busqueda">
+                    <!-- podemos Agregar algo -->
+                    <div class="caja1">
+                        <span><i class="fa-solid fa-clapperboard"></i></span>
+                        <input type="search" placeholder="Buscar Película">
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Section del slider del menu-Principal===================================== -->
+
+    <div class="contenedor__slider">
+        <div class="slider__caja cajaa1 active">
+            <div class="info">
+                <h3>Interstellar</h3>
+                <h3>Reparto Principal <span class="span__primario"></span></h3>
+                <span class="contenedor__estrellas__principal">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>
+                <p>Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.</p>
+                <div class="contenedor__botones">
+                    <a href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Reproducir</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Información</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__caja cajaa2">
+            <div class="info">
+                <h3>Venom</h3>
+                <h3>Reparto Principal <span class="span__secundario"></span></h3>
+                <span class="contenedor__estrellas__principal">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>
+                <p>Eddie Brock (Tom Hardy) es un consolidado periodista y astuto reportero que está investigando una empresa llamada Fundación Vida. Esta fundación, dirigida por el eminente científico Carlton Drake (Riz Ahmed), está ejecutando secretamente experimentos ilegales en seres humanos </p>
+                <div class="contenedor__botones">
+                    <a href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Reproducir</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Información</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__caja cajaa3">
+            <div class="info">
+                <h3>Las aventuras de Buck</h3>
+                <h3>Reparto Principal <span class="span__terceario"></span></h3>
+                <span class="contenedor__estrellas__principal">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>
+                <p>Continúa contando las hilarantes aventuras de uno de los mamíferos favoritos de la prehistoria. Tras un distanciamiento con su hermana mayor, Ellie, los hermanos Crash y Eddie parten a la búsqueda de un lugar propio</p>
+                <div class="contenedor__botones">
+                    <a href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Reproducir</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Información</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__caja cajaa4">
+            <div class="info">
+                <h3>Jungle Cruise</h3>
+                <h3>Reparto Principal <span class="span__cuaternario"></span></h3>
+                <span class="contenedor__estrellas__principal">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>
+                <p>Principios del siglo XX. Frank es el carismático capitán de una peculiar embarcación que recorre la selva amazónica. Allí, a pesar de los peligros que el río Amazonas les tiene preparados</p>
+
+                <div class="contenedor__botones">
+                    <a href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Reproducir</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Información</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__caja cajaa5">
+            <div class="info">
+                <h3>WALL·E Batallón De Limpieza </h3>
+                <h3>Reparto Principal <span class="span__quinto"></span></h3>
+                <span class="contenedor__estrellas__principal">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <p>En el año 2700, en un planeta Tierra devastado y sin vida, tras cientos de solitarios años haciendo aquello para lo que fue construido -limpiar el planeta de basura- el pequeño robot WALL•E descubre una nueva misión en su vida cuando se encuentra con una moderna y lustrosa robot exploradora llamada EVE.</p>
+
+                <div class="contenedor__botones">
+                    <a href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Reproducir</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Información</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btns">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
+    </div>
+
+
+    <!-- sección de botones del slider =============================================== -->
+
+    <div class="caja__botones__s contenedor__principal" id="caja__botones__s">
+        <div class="caja__caja__info">
+            <h3>Tendencias <span class="peliculas__recomendadas"></span></h3>
+        </div>
+        <div class="caja__caja">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+    <!-- Slider de Peliculas (Tendencias) =========================================== -->
+
+    <div class="contenedor__principal" id="recomendadas">
+            <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="slider/imagen20.jpg" alt="">
+              <div class="caja__contenido">
+                  <a href="#">
+                      <div class="caja__estrellas">
+                            <h3>Venom</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="slider/imagen26.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#">
+                    <div class="caja__estrellas">
+                          <h3>The Flash</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+            </div>
+          </div>
+         
+          <div class="swiper-slide">
+            <img src="slider/imagen22.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#">
+                    <div class="caja__estrellas">
+                          <h3>Deadpool</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slider/imagen21.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#">
+                    <div class="caja__estrellas">
+                          <h3>Hotel Transilvania</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slider/imagen23.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#">
+                    <div class="caja__estrellas">
+                          <h3>Proyecto Adams</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slider/imagen24.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#">
+                    <div class="caja__estrellas">
+                          <h3>The Batman</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slider/imagen25.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#">
+                    <div class="caja__estrellas">
+                          <h3>Las Aventuras de Pil</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+            </div>
+          </div>
+       
+          <div class="swiper-slide">
+            <img src="slider/imagen27.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#">
+                    <div class="caja__estrellas">
+                        <h3>Spider-Man: No Way Home</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+               
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="slider/imagen28.jpg" alt="">
+            <div class="caja__contenido">
+                <a href="#" class="caja__contenido__i__a">
+                    <div class="caja__estrellas">
+                          <h3>Las aventuras de Buck</h3>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <i class="fa-solid fa-play" id="caja__estrella__menu"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Presentacion de la sección ========================================== -->
+
+    <div class="caja__botones__s contenedor__principal" id="seccion__3">
+        <div class="caja__caja__info">
+            <h3>Sección de <span class="seccion__peliculas"></span></h3>
+        </div>
+    </div>
+    
+    <!-- Siguiente Sección de peliculas ===========================================-->
+
+    <div class="caja__botones__dos contenedor__principal caja__dos">
+        <div class="caja__1 inono_caja active">
+            <i class="fa-solid fa-house-chimney"></i>
+            <span>Inicio</span>
+        </div>
+        <div class="caja__2 inono_caja">
+            <i class="fa-solid fa-fire"></i>
+            <span>Tendencias</span>
+        </div>
+        <div class="caja__3 inono_caja">
+            <i class="fa-solid fa-video"></i>
+            <span>Filmes</span>
+        </div>
+        <div class="caja__4 inono_caja">
+            <i class="fa-solid fa-forward"></i>
+            <span>Reproducir</span>
+        </div>
+
+    </div>
+
+    <!-- Secciones del menu de los div de arriba===================================== -->
+
+    <div class="contenedor__secundario__secciones">
+        <!-- primer contenedor -->
+        <div class="caja-caja-caja">
+
+            <div class="contenedor__principal__informacion">
+                <div class="caja__input">
+                    <input type="search" name="" id="" placeholder="Buscar Pelicula">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="boton__de__ver__mas">
+                    <button id="botonPelicula">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Primer contenedor -->
+            <div class="contenedor__primario div__caja active">
+    
+    
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s16.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Nuevas Leyendas</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s18.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Los Vengadores</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s17.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Alerta Roja</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s19.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Liga De Justicia</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s15.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Venom</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s14.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>La Era de Hielo</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s13.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Luz Negra</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s12.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Moonfal</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s11.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>La Gran Muralla</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s10.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Jungle Cruise</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s20.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>El Exorcismo</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s9.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>La Aspirante</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s8.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Koati</span><br>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s7.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Morbius</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s6.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>Sonic 2</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Cajas de la seeción #1 -->
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s5.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                               <span>80 Tagen</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </div>
+                </div>
+    
+    <!-- Más Opciones al estar en Modo display: none =======================================-->
+            
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s24.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>Cangrejo Negro</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s25.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>Spider Man</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s26.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>En la Tormenta</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s27.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>A.Bug</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caja__peliculas__seccion">
+                    <img src="secciones/s28.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>The Kings</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s29.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>Golf</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s30.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>The Jack</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="caja__peliculas__seccion a__a">
+                    <img src="secciones/s31.jpg" alt="">
+                    <div class="caja__informacion__seccion">
+                        <a href="#">
+                            <div>
+                            <span>Screams</span><br>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="play__movies">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                        </a>
+                        
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+        <!-- Segundo contenedor -->
+        <div class="contenedor__secundario div__caja">
+
+            <!-- contendor secundario=============================================== -->
+
+            <div class="caja__tendencias">
+                <!-- Comienzo de la caja================================================ -->
+                <div class="caja__tendencias__1">
+                    <div class="caja__foto">
+                        <img src="secciones/s16.jpg" alt="">
+                    </div>
+                    <div class="caja__tendencias__info">
+                        <div class="caja__caja__tendencias">
+                            <h3>Nuevas Leyendas</h3>
+                            <h3>¡Bienvenido al Partido del Siglo!</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <p>Secuela de la cinta original de 1996, Space Jam, protagonizada por Michael Jordan. En esta segunda parte, la super estrella de la NBA es LeBron James, quien queda atrapado junto a su hijo Dom en un extraño lugar, un espacio digital de una fuerza todopoderosa y malvada conocida como A.I. Para volver a casa y poner a salvo a su hijo, el jugador de baloncesto deberá unir fuerzas con Bugs Bunny, Lola Bunny y el resto de personajes de los Looney Tunes para enfrentarse en un partido de baloncesto a los campeones digitalizados por inteligencia artificial.</p>
+                        </div>
+                        <a href="#" class="caja__ver__trailer">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Ver Trailer</span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- Caja 2 -->
+
+                <div class="caja__caja__tendencias__2">
+                    <div class="caja__galeria">
+                        <div class="caja__galeria__info">
+                            <h3>Colecciones</h3>
+                        </div>
+                        <div class="caja__galeria__imagenes">
+                            <img src="parte/1.jpg" alt="">
+                            <img src="parte/2.jpg" alt="">
+                            <img src="parte/3.jpg" alt="">
+                            <img src="parte/4.jpg" alt="">
+                            <img src="parte/5.jpg" alt="">
+                            <img src="parte/6.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- Caja #2 de tendencias ================================================= -->
+            <div class="caja__tendencias">
+                <!-- Comienzo de la caja================================================ -->
+                <div class="caja__tendencias__1">
+                    <div class="caja__foto">
+                        <img src="secciones/s15.jpg" alt="">
+                    </div>
+                    <div class="caja__tendencias__info">
+                        <div class="caja__caja__tendencias">
+                            <h3>Venom: Habrá Matanza</h3>
+                            <h3>El mundo tiene suficientes superhéroes.</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <p>Eddie Brock (Tom Hardy) es un consolidado periodista y astuto reportero que está investigando una empresa llamada Fundación Vida. Esta fundación, dirigida por el eminente científico Carlton Drake (Riz Ahmed), está ejecutando secretamente experimentos ilegales en seres humanos y realizando pruebas que involucran formas de vida extraterrestres y amorfas conocidas como simbiontes. Durante una visita furtiva a la central, el periodista quedará infectado por un simbionte. Comenzará entonces a experimentar cambios en su cuerpo que no entiende, y escuchará una voz interior, la del simbionte Venom.</p>
+                        </div>
+                        <a href="#" class="caja__ver__trailer">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Ver Trailer</span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- Caja 2 -->
+
+                <div class="caja__caja__tendencias__2">
+                    <div class="caja__galeria">
+                        <div class="caja__galeria__info">
+                            <h3>Colecciones</h3>
+                        </div>
+                        <div class="caja__galeria__imagenes">
+                            <img src="parte/7.jpg" alt="">
+                            <img src="parte/8.jpg" alt="">
+                            <img src="parte/9.jpg" alt="">
+                            <img src="parte/10.jpg" alt="">
+                            <img src="parte/11.jpg" alt="">
+                            <img src="parte/12.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="caja__tendencias">
+                <!-- Comienzo de la caja================================================ -->
+                <div class="caja__tendencias__1">
+                    <div class="caja__foto">
+                        <img src="secciones/s32.jpg" alt="">
+                    </div>
+                    <div class="caja__tendencias__info">
+                        <div class="caja__caja__tendencias">
+                            <h3>Spider-Man: No Way Home </h3>
+                            <h3>¡Un gran poder conlleva una gran responsabilidad!</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <p>Peter Parker es desenmascarado y por tanto no es capaz de separar su vida normal de los enormes riesgos que conlleva ser un súper héroe. Cuando pide ayuda a Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man. Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter decide pedirle ayuda al Doctor Extraño para recuperar su vida. Pero algo sale mal y provoca una fractura en el multiverso.</p>
+                        </div>
+                        <a href="#" class="caja__ver__trailer">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <span>Ver Trailer</span>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- Caja 2 -->
+
+                <div class="caja__caja__tendencias__2">
+                    <div class="caja__galeria">
+                        <div class="caja__galeria__info">
+                            <h3>Colecciones</h3>
+                        </div>
+                        <div class="caja__galeria__imagenes">
+                            <img src="parte/13.jpg" alt="">
+                            <img src="parte/14.jpg" alt="">
+                            <img src="parte/15.jpg" alt="">
+                            <img src="parte/16.jpg" alt="">
+                            <img src="parte/17.jpg" alt="">
+                            <img src="parte/18.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <!-- Final de la caja -->
+        </div>
+
+        <!-- Tercer contenedor -->
+        <div class="contenedor__terceario div__caja">
+
+            <div class="caja__botones__imagenes">
+                <div class="botones__caja">
+                    <!-- <h3>Películas 
+                        <i class="fa-solid fa-film"></i>
+                         Full HD<span class="span"></span></h3> -->
+                    <h4>
+                        Lo Mejor en <span class="span-2"></span>
+                    </h4>
+                </div>
+                <div>
+                    <button class=" botonCajas active">Suspenso</button>
+                    <button class="botonCajas ">Acción</button>
+                    <button class="botonCajas">Anime</button>
+
+                </div>
+
+            </div>
+            <div class="caja__contendora__caja__tercearia active">
+
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/1917.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>1917</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/captain-marvel.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Capitan Marvel</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/casino-royale.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Casino Royal</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/dark-knight.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Dark Knight</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/dune.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Dune</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/endgame.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>EndGame</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/eternals.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Eternals</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/gladiator.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Gradiador</h4>
+                        <h5>
+                            
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/interstaller.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Interstaller-Man</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/LOTR.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Señor de Anillos</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="slider/parte 2/panther.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Pancher</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <!-- Fin contenedor -->
+            </div>
+
+            <div class="caja__contendora__caja__tercearia">
+
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/img2.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>The Batman</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s3.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Multiverso</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s17.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Alerta Roja</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s7.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Morbius</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s19.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Liga Justicia</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s22.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Deadpool</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s23.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Venom</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s24.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Cangrejo Negro</h4>
+                        <h5>
+                            
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s25.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Spider-Man</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s28.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>King Mans</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s32.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Spider-man 1</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <!-- Fin contenedor -->
+            </div>
+
+            <div class="caja__contendora__caja__tercearia">
+
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/img1.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Era de Hielo</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s2.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Tipos Malos</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s5.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>80 Tagen</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s6.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Sonic 2</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s8.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Koati</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s10.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Jungre Cruise</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s14.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Era de Hielo</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s16.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Nuevas Leyendas</h4>
+                        <h5>
+                            
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s21.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Walle</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/s27.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>A.Bugs</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <div class="caja__tercearia__imagenes">
+                    <div class="caja__imagen__tercearia">
+                        <img src="secciones/img1.jpg" alt="">
+                    </div>
+                    <div class="caja__info__tercearia">
+                        <h4>Era de Hielo</h4>
+                        <h5>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        
+                    </div>
+                </div>
+                <!-- Fin contenedor -->
+            </div>
+
+
+
+
+            <!-- Final contenedor terceario ================================================== -->
+        </div>
+
+        <!-- cuarto contenedor -->
+        <div class="contenedor__cuaternario div__caja ">
+            <div class="caja__padre">
+                <!-- Inicio -->
+                <h3 class="h3__caja">Mejores Películas <span class="span__h3">2018-2021</span></h3>
+                <div class="caja__padre__peliculas">
+
+                    <!-- caja #1==================================================== -->
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/ju.jpg" alt="">
+
+                       <div class="caja__informacion__video">
+                            <h3>Jumanji <span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+                    <!-- caja#2 ============================================================= -->
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/furioso.jpg" alt="">
+                       <div class="caja__informacion__video">
+                            <h3>Rápidos y Furiosos<span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+                    <!-- caja #3 ==================================== -->
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/wale.jpg" alt="">
+                       <div class="caja__informacion__video">
+                            <h3>Walle<span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/bany.jpg" alt="">
+                       <div class="caja__informacion__video">
+                            <h3>Fantasmas Nuevos<span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/hob.jpg" alt="">
+                       <div class="caja__informacion__video">
+                            <h3>Lord Kings<span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/jack.jpg" alt="">
+                       <div class="caja__informacion__video">
+                            <h3>Jack Sparrow<span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/sonic.jpg" alt="">
+                       <div class="caja__informacion__video">
+                            <h3>Sonic 2<span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+                    <div class="caja__video">
+                        <video src="video/2e7956fec3b548dda6e39e5f86c10d13.mp4" controls></video>
+                        <img src="imagenes/serpiente.jpg" alt="">
+                       <div class="caja__informacion__video">
+                            <h3>Mogli<span>HD</span></h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                       <div class="caja__informacion__video__2">
+                             <button><i class="fa-solid fa-circle-play"></i></button>
+                       </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+            <!-- Final -->
+        </div>
+
+
+
+
+    </div>
+
+
+  
+    <a href="#" class="caja__flotante">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Importamos el CDN de la libreria Typed.js================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   
+    <!-- Importamos el archivo.js de la libreria swiper.js -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Incluimos el Archivo de JavaScript=================================== -->
+    <script src="main.js"></script>
+</body>
+</html>

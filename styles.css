@@ -1,0 +1,686 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+
+
+/* Receteamos todos los margenes, padding del Dom */
+
+html{
+    scroll-behavior: smooth;
+}
+div[id="recomendadas"]{
+   scroll-margin-top: 200px;
+}
+div[id="seccion__3"]{
+   scroll-margin-top: 100px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--fondo__azul__body);
+}
+
+/* Aplicamos estilos ala barra de scroll del navegador-body */
+
+body::-webkit-scrollbar {
+    background-color: var(--fondo__azul__body);
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--azul__hover);
+    border-radius: 1000px;
+    width: 4px;
+}
+
+/* contenedor principal donde se agrupa cada elemento teniendo una misma medida */
+
+.contenedor__principal {
+    margin: auto;
+    width: 90%;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 1000;
+}
+
+header .contenedor__principal {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Le Aplicamos estos estilos a header cuando se hac scroll en el eje Y  */
+header.header__activo {
+    background-color: var(--fondo__azul__body);
+    transition: 0.7s;
+    transition-property: background-color;
+    box-shadow: 5px 5px 5px 5px var(--color__contenedor);
+}
+/* ========================================================================= */
+
+header .contenedor__principal .contenedor__navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor__logo p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--blanco);
+}
+
+
+.contenedor__logo span {
+    color: var(--azul__fuerte);
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 1.4em; */
+    font-weight: 500;
+}
+
+.contenedor__nav, .caja__especial__responsive{
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+}
+
+.contenedor__nav  .caja__especial__responsive a {
+    text-decoration: none;
+    color: var(--color__letra);
+    font-size: 1.2em;
+}
+
+.caja__especial__responsive a.inicio{
+    color: var(--blanco);
+}
+.contenedor__nav a:hover {
+    color: var(--blanco);
+    transform: scale(1.05);
+}
+
+.contenedor__nav .boton__busqueda {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--azul__fuerte);
+    font-size: 1.1em;
+}
+
+i.active::before{
+    content:'\f00d';
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--blanco__hsl);
+    font-size: 1.3em;
+}
+
+
+/* le añadi none, para q cuendo se haga click en el icono, aparezca con ayuda de js */
+.contenedor__busquedas__peliculas {
+    display: none;
+
+}
+.contenedor__busquedas__peliculas .caja__busqueda {
+    display: flex;
+    justify-content:flex-end;
+}
+
+/* la clase active se la añadimos desde el javascript al hacer click en el icono (search del header */
+.contenedor__busquedas__peliculas.active {
+    display: block;
+}
+.modo__oscuro{
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    background-color: var(--vidrio);
+}
+.modo__oscuro::after{
+    content:'';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:unset;
+    background-color: var(--crema);
+    border-radius: 100px;
+}
+.modo__oscuro.active::after{
+    left: unset;
+    right:0;
+}
+.modo__oscuro span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: none;
+    display: block;
+}
+
+.modo__oscuro .dia{
+    color: var(--amarillo__fuerte);
+}
+
+/* input */
+.caja__busqueda .caja1{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+}
+.caja__busqueda .caja1 input{
+    width: 450px;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    color: var(--negro__fondo);
+    background: var(--vidrio__blanco);
+    font-size: 1em;
+}
+
+
+.caja__busqueda .caja1 input::placeholder{
+    color: var(--negro__fondo);
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+.caja__busqueda .caja1 span{
+    width: 40px;
+    padding: 10px;
+    background: var(--vidrio__blanco);
+    border-radius: 7px 0px 0px 7px;
+}
+.caja__busqueda .caja1 span i{
+    color: var(--azul__fuerte);
+    
+}
+.caja__busqueda .caja1 button{
+    width: 40px;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    padding: 10px;
+    background: var(--vidrio__blanco);
+    cursor: pointer;
+    border-radius: 0px 7px 7px 0px;
+    color: var(--azul__fuerte);
+    margin-left:-5px;
+}
+
+/* cajas slider */
+
+
+.contenedor__slider{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fondo__azul__body);
+    position: relative;
+}
+
+/* Le damos fondo alas cajas del slider para asi poder aplicar otro fondo de color rgba */
+.cajaa1{
+    background: linear-gradient( rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 50%), url(imagenes/interestelar.jpg);
+    background-size: cover;
+}
+.cajaa2{
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%), url(imagenes/venom.jpg);
+    background-size: cover;
+}
+.cajaa3{
+    background: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 100%), url(imagenes/era\ del\ hielo.jpg);
+    background-size: cover;
+}
+.cajaa4{
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.4) 100%), url(imagenes/jungla.jpg);
+    background-size: cover;
+}
+.cajaa5{
+    background: linear-gradient(rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(imagenes/walee.jpg);
+    background-size: cover;
+}
+.slider__caja{
+    z-index:1;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    clip-path: circle(0% at 0 48%);
+}
+.slider__caja.active{
+    clip-path: circle(150% at 0 48%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+.slider__caja.active p{
+    animation: fernando 3s alternate;
+    padding-top: 10px;
+}
+.slider__caja.active h3 {
+    animation: fernando 3s alternate;
+}
+.slider__caja.active .contenedor__estrellas__principal{
+    color:var(--azul__fuerte);
+}
+.slider__caja.active .contenedor__estrellas__principal i{
+    animation: fernando 3s alternate;
+}
+
+
+.info{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform: traslateY(-35%);
+    color: #fff;
+    max-width: 40%;
+}
+.info h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+.btns {
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+    transform: traslateY(-45%);
+    display: flex;
+    z-index: 100;
+
+}
+.btns .btn {
+    width: 10px;
+    height:10px;
+    background-color: var(--crema);
+    margin: 5px;
+    cursor:pointer;
+    border-radius: 50%;
+}
+.btns .btn.active{
+    background-color: var(--azul__fuerte);
+}
+
+/* Botones de --> Reproducir y Más Información */
+.slider__caja .info .contenedor__botones{
+    padding: 35px 0;
+}
+.slider__caja .info .contenedor__botones span {
+    margin-left: 6px;
+}
+.slider__caja .info .contenedor__botones a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 0.4em;
+    background-color: rgba(0,0,0,0.7);
+    margin-right: 10px;
+}
+.slider__caja .info .contenedor__botones a:hover {
+    /* color: var(--negro); */
+    background-color: rgba(0,0,0,0.5);
+    transition: 1s ease;
+}
+
+.slider__caja .info h3:first-child{
+    color: var(--azul__fuerte);
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.slider__caja .info h3{
+    font-weight: 500;
+}
+.slider__caja .info span:first-child {
+    color: var(--azul__fuerte);
+}
+
+/* Animacion de movimiento de la caja de los textos */
+
+@keyframes fernando {
+    from{
+        transform:translateY(-200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Estilos Responsive de la parte del Inicio */
+
+
+.boton__menu {
+    font-size: 1.3em;
+    background-color: transparent;
+    color: var(--blanco);
+    outline: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+
+}
+.boton__menu:first-child{
+    font-size: 1.7em;
+    margin: 10px 20px 0 0;
+}
+
+@media (max-width: 990px){
+    .boton__menu {
+        display: block;
+    }
+
+
+    .caja__especial__responsive{
+        position: fixed;
+        top: 0;
+        left:-100%;
+        width: 100%;
+        height: 100%;
+        background-color: var( --color__fondo__negro);
+        display: flex;
+        flex-direction: column;
+        /* opacity: 0.4; */
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+        transition: 0.6s ease;
+    }
+    .caja__especial__responsive.active{
+        left: 0;
+        transition: 0.6s ease;
+    }
+    #boton__caja__especial{
+        align-self: flex-end;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .info{
+        max-width: 90%;
+    }
+}
+@media (max-width: 800px){
+    .contenedor__busquedas__peliculas{
+        width: 100%;
+        margin: auto;
+    }
+    .caja__busqueda{
+        width: 100%;
+    }
+    .caja1 {
+        width: 100%;
+    }
+}
+@media (max-width: 630px){
+
+    .info h3 {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+    .info p{
+        font-size: 1em;
+    }
+    .slider__caja .info h3:first-child{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    /* botones */
+    /* Botones de --> Reproducir y Más Información */
+    .slider__caja .info .contenedor__botones{
+        padding: 35px 0;
+    }
+    .slider__caja .info .contenedor__botones span {
+        margin-left: 3px;
+    }
+    .slider__caja .info .contenedor__botones a {
+        padding: 1em 1.3em;
+        border-radius: 0.5em;
+    }
+    .slider__caja .info .contenedor__botones a:first-child{
+        margin-right: 10px;
+    }
+    .info{
+        top: 30%;
+        transform: traslateY(-30%);
+    }
+    .btns {
+        left: 37%;
+        transform: traslateY(-37%);
+    
+    }
+    .btns .btn {
+        width: 8px;
+        height:8px;
+    }
+}
+
+@media (max-width: 361px){
+       /* botones */
+    /* Botones de --> Reproducir y Más Información */
+    .slider__caja .info .contenedor__botones a {
+        padding: 1em 1em;
+        border-radius: 0.5em;
+    }
+}
+
+/* Estilos para el slider de swipe.js */
+
+
+
+
+
+.contenedor__principal .swiper{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondo__azul__body);
+    padding-bottom: 50px;
+}
+
+.contenedor__principal .swiper-slide {
+  border: none;
+  position: relative;
+  color: var(--color__letra);
+  background-color: var(--fondo__azul__body);
+  
+}
+.contenedor__principal .swiper-slide::after{
+    content:"";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.45);
+    border-radius: 4px;
+}
+
+.caja__contenido a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.caja__contenido{
+    padding: 10px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--Degradado__fondo);
+
+}
+/* Botones del Slider */
+.caja__botones__s {
+    width: 90%;
+    height: 65px;
+    display: flex;
+    margin: 40px auto 33px auto;
+    justify-content: space-between;
+    background: var(--color__contenedor);
+}
+.caja__caja {
+    position: relative;
+    width: 90px;
+    height: 100%;
+}
+
+
+
+.contenedor__principal  .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-position: center center;
+  border-radius: 4px;
+}
+
+/* Añadimos los estilos al texto que tienen las imagenes
+ del slider */
+
+  a .caja__estrellas h3 {
+    font-size: 1.1em;
+    color: var(--color__letra);
+    padding-bottom: 0.3em;
+    font-family: 'Poppins', sans-serif;
+ }
+  a .caja__estrellas i {
+    font-size: 1em;
+    color: var(--azul__fuerte);
+ }
+ .caja__contenido a {
+    text-decoration : none;
+ }
+
+ /* a #caja__estrella__menu:hover{
+    color: var(--azul__fuerte);
+    background-color:transparent;
+    transition: background-color .6s;
+} */
+ a #caja__estrella__menu{
+     color: white;
+     padding: 10px 12px;
+     font-size: 1.4em;
+     color: var(--blanco);
+     border-radius: 50%;
+     background-color: var(--azul__fuerte);
+     animation: animate 2s linear infinite;
+ }
+
+
+ /* editamos los botones el tamaño */
+
+ .swiper-button-next::after,
+ .swiper-button-prev::after{
+     color: var(--azul__fuerte);
+     font-size: 1.5em;
+     font-weight: 500;
+ }
+
+ /* Peliculas recomdadas */
+ .caja__caja__info h3{
+     color: var( --color__letra);
+     line-height: 65px;
+     padding-left: 30px;
+     /* text-transform: uppercase; */
+     font-size: 1.1em;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .caja__caja__info span {
+     color: var(--azul__fuerte);
+     text-transform: lowercase;
+     letter-spacing: 1px;
+ }
+
+
+@media (max-width: 650px ){
+
+    .caja__caja {
+        width: 70px;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+        font-size: 1.1em;
+    }
+
+    
+}
+
+/* Animaciones y estilos al boton fixed dela esquina inferior derecha para ir al menu */
+.caja__flotante {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    padding: 14px 16px;
+    background-color: var(--azul__fuerte);
+    border-radius: 50%;
+    z-index: 300;
+    animation: animate linear 4s infinite;
+    display: none;
+
+}
+.caja__flotante.active{
+    display: block;
+}
+.caja__flotante i{
+    color: var(--blanco);
+    font-size: 1.2em;
+}
+/* Animacion para el boton de las peliculas  */
+
+@keyframes animate {
+    0%{
+        box-shadow: 0 0 0 0 hsl(214,84%,56%);;
+    }
+    40%{
+        box-shadow: 0 0 0 30px  rgb(255, 193, 7, 0);
+    }
+    80%{
+        box-shadow: 0 0 0 20px rgb(255, 193, 7, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(255, 193, 7, 0);
+    }
+}
+
+/* Siguiente seccion */
+
+
+@media (max-width: 850px){
+    .caja__caja__info h3{
+        padding-left: 10px;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    .caja__caja__info  span{
+        text-transform: uppercase;
+    }
+}
+
+.a__a{
+    display: none;
+}

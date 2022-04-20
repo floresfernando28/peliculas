@@ -469,6 +469,10 @@ i.active::before{
         width: 8px;
         height:8px;
     }
+    .caja__busqueda .caja1 input{
+        width: 260px;
+
+    }
 }
 
 @media (max-width: 361px){
@@ -477,6 +481,10 @@ i.active::before{
     .slider__caja .info .contenedor__botones a {
         padding: 1em 1em;
         border-radius: 0.5em;
+    }
+    .caja__busqueda .caja1 input{
+        width: 210px;
+
     }
 }
 

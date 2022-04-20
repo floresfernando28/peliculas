@@ -9,12 +9,6 @@
     <!-- CDN Font-Awesome========================================= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- ¡Importaciones de las fuentes a utilizar de Google-Font!======================-->
-    <!-- Utilizare 'Open Sans' ========-->
-    <!-- Utilizare 'Poppins' ================ -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Roboto:wght@100&family=Rubik:wght@500&family=Slabo+13px&family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet"> -->
 
     <!-- Incluimos las hojas de estilos en cascada.css=============================-->
     <!-- Contenedor de colores en Variables==============================================-->
@@ -28,7 +22,7 @@
 
     <!-- Hoja de todos los estilos=====================================================-->
     <link rel="stylesheet" href="css/estilos__netflix.css">
-    <link rel="stylesheet" href="css/estilos__contenedor__2.css">
+    <link rel="stylesheet" href="estilos__contenedor__2.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,7 +33,7 @@
         <div class="contenedor__principal">
             <div class="contenedor__navegacion">
                 <div class="contenedor__logo">
-                    <p><i class="fa-solid fa-tv"></i> Cine<span>NET</span></p>
+                    <p><i class="fa-solid fa-tv"></i> Cine<span>Max</span></p>
                 </div>
 
                 <nav class="contenedor__nav">
@@ -51,8 +45,8 @@
                         <a href="#" class="inicio">Inicio</a>
                         <a href="#recomendadas">Recomendadas</a>
                         <a href="#seccion__3">Películas</a>
-                        <a href="#">Más Recientes</a>
-                        <a href="#">Listas</a>
+                        <a href="#caja__final">Popular</a>
+
                         <!-- modo__oscuro -->
                         <button class="modo__oscuro" id="modo__oscuro">
                             <span><i class="fa-solid fa-sun dia"></i></span>
@@ -1722,10 +1716,67 @@
     </div>
 
 
-  
+    <!-- Ultima seccion de la pagina -->
+
+    <div class="contenedor__final" id="caja__final">
+        <div class="contenedor__base__final">
+            <div class="caja__informacion__final">
+               <div class="contenedor__total">
+                <h3>Doctor Strange en el multiverso de la locura (2022)</h3><br>
+                <p>Viaja a lo desconocido con el Doctor Strange, quien, con la ayuda de tanto antiguos como nuevos aliados místicos, recorre las complejas y peligrosas realidades alternativas del multiverso para enfrentarse a un nuevo y misterioso adversario.</p>
+                <div class="caja__iconos__final">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="caja__caja__final">
+                    <div class="caja__caja__finalizado">
+                        <a href="#">
+                            <i class="fa-solid fa-play"></i>
+                            
+                        </a>
+                        <span>Ver Trailer</span>
+                    </div>
+                   
+                    <div class="caja__film">
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <span>Proximamente (Cines)</span>
+                    </div>
+                </div>
+                
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <!-- Footer -->
+    <footer>
+        <div class="caja__footer">
+            <div class="contenedor__logo">
+                <p><i class="fa-solid fa-tv"></i> Cine<span>Max</span></p>
+                <div class="footer__footer">
+                    Todos los derechos Reservados ©
+                </div>
+            </div>
+
+        </div>
+
+        <div class="caaja__footer__informacion">
+            <a href="#">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-whatsapp "></i>
+                <i class="fa-solid fa-envelope "></i>
+            </a>
+        </div>
+    </footer>
     <a href="#" class="caja__flotante">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+  
 
     <!-- Importamos el CDN de la libreria Typed.js================================== -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

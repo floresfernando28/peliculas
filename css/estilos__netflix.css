@@ -206,13 +206,23 @@ body.modo__Dark .caja__informacion__video__2 button{
     animation: animate__netflix 2s linear infinite;
 }
 
+/* Estilos ala caja final de la pagina */
 
+body.modo__Dark .caja__iconos__final{
+    color: var(--amarillo__fuerte);
+}
+body.modo__Dark .contenedor__total h3 {
+    color: var(--amarillo__fuerte);
+}
 
+body.modo__Dark .caja__caja__final a {
 
-
-
-
-
+    background-color: var(--amarillo__fuerte);
+    animation: animate__netflix 2s linear infinite;
+}
+body.modo__Dark .caja__film i{
+    color: var(--amarillo__fuerte);
+}
 
 
 /* Animacion para el boton de las peliculas en estado de netflix */

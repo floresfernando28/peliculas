@@ -218,8 +218,9 @@ body.modo__Dark .contenedor__total h3 {
 body.modo__Dark .caja__caja__final a {
 
     background-color: var(--amarillo__fuerte);
-    animation: animate__netflix 2s linear infinite;
+    animation: animate__netflix 2.1s linear infinite;
 }
+/* modos dark del body */
 body.modo__Dark .caja__film i{
     color: var(--amarillo__fuerte);
 }
